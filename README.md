@@ -149,7 +149,7 @@ Notes:
 
 * This library does __not resolve__ paths. For example, `D:\a\b.js`, `\a\b.js` and `a\b.js` 
 might all represent the same file, but they are seen as different kinds of paths,
-and different kinds of paths will always have `null` calculated as the common path.
+and different kinds of paths will always have `null` as the common path.
 If your array can contain different kinds of paths (e.g. both absolute and relative), 
 use [path.resolve()](https://nodejs.org/api/path.html#path_path_resolve_paths) on all paths.
 * This library expects and works well with __normalized__ paths. 
