@@ -1,0 +1,60 @@
+{
+  "name": "common-path",
+  "version": "1.0.0",
+  "description": "Finds the longest common parent directory path in an array of file path strings or custom objects. Also returns sub and base parts for each path.",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "eslint . -f tap && nyc --reporter=lcov --reporter=text mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "Milos Djermanovic <milos.djermanovic@gmail.com>",
+  "license": "MIT",
+  "repository": "mdjermanovic/common-path",
+  "homepage": "https://github.com/mdjermanovic/common-path#readme",
+  "bugs": "https://github.com/mdjermanovic/common-path/issues",
+  "engines": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.10.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "js-combinatorics": "^0.5.4",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "prettier": "^1.15.3",
+    "upath": "^1.1.0"
+  },
+  "keywords": [
+    "path",
+    "paths",
+    "common",
+    "shared",
+    "parent",
+    "prefix",
+    "same",
+    "longest",
+    "max",
+    "deepest",
+    "dir",
+    "directory",
+    "folder",
+    "absolute",
+    "relative",
+    "unc",
+    "find",
+    "array",
+    "file",
+    "files",
+    "root",
+    "cross-platform",
+    "windows",
+    "posix"
+  ]
+}

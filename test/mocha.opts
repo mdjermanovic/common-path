@@ -1,0 +1,5 @@
+--exclude test/shared.js
+
+# Individual tests are with combinations, permutations, cartesian products etc.
+--no-timeouts
+-s 1000000
