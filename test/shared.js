@@ -164,6 +164,8 @@ function factory(platform) {
     testWithAllPrefixes(['a/b/file1', 'a/c/file2'], 'a');
     testWithAllPrefixes(['a/a/file1', 'a/a/file2'], 'a/a');
     testWithAllPrefixes(['a/a/file1', 'a/file2'], 'a');
+    testWithAllPrefixes(['abc/file1', 'abcd/file2'], '');
+    testWithAllPrefixes(['ab/file1', 'a/file2'], '');
   }
 
   function threePathsTest() {

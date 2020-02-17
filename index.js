@@ -88,7 +88,7 @@ function customFind(Path, paths, pathKey) {
   } else if (commonDir.length > commonRoot.length) {
     let { done, value: { dir } = {} } = iterator.next();
     while (!done) {
-      if (dir.startsWith(commonDir)) {
+      if (dir === commonDir || dir.startsWith(commonDir + sep)) {
         ({ done, value: { dir } = {} } = iterator.next());
       } else {
         const lastSepIndex = commonDir.lastIndexOf(sep);
