@@ -1,12 +1,13 @@
 {
   "name": "common-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finds the longest common parent directory path in an array of file path strings or custom objects. Also returns sub and base parts for each path.",
   "main": "index.js",
   "files": [
     "index.js",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "eslint . -f tap && nyc --reporter=lcov --reporter=text mocha",
